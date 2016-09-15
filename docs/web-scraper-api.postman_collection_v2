@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "web-scraper-api",
+		"_postman_id": "59faf39a-561f-45ea-79fd-f3f4fa834c6a",
+		"description": "Collection of requests for the web scraper API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /api/accounts",
+			"request": {
+				"url": "http://localhost:3500/api/accounts?fromTransDate=04/01/2016&toTransDate=08/23/2016",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Get the account details for the specified time period"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/accounts",
+			"request": {
+				"url": "http://localhost:3500/api/accounts?fromTransDate=04/01/2015&toTransDate=08/23/2016",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Get account details, error case fromTransDate should be less than toTransDate"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/accounts",
+			"request": {
+				"url": "http://localhost:3500/api/accounts",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "fromTransDate and toTransDate both are mandatory"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "web-scraping-service",
+  "version": "1.0.0",
+  "description": "WEB SCRAPING ACCOUNT SERVICE API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "watch": "nodemon app/app.js",
+    "lint": "eslint *.js **/*.js || true",
+    "lint:fix": "eslint *.js **/*.js --fix || true"
+  },
+  "author": "TCSCODER",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.20.0",
+    "co": "^4.6.0",
+    "common-errors": "^1.0.0",
+    "config": "^1.21.0",
+    "express": "^4.14.0",
+    "get-parameter-names": "^0.3.0",
+    "humps": "^1.1.0",
+    "joi": "^9.0.4",
+    "lodash": "^4.15.0",
+    "moment": "^2.14.1",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^5.0.2",
+    "eslint": "^3.3.1",
+    "eslint-plugin-import": "^1.13.0"
+  }
+}
